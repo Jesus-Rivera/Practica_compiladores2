@@ -37,10 +37,10 @@ def mostrar(recorrido,cadena,nodos):
 			camino += (str(nodos[recorrido[j][0]].numero)+"(E) -> ")
 		elif recorrido[j][0] == -2:
 			camino += ("\033[1;34m ("+cadena[i]+")\033[0;m -> ")
-			i += 0
+			i += 1
 		else:
 			if (i + 1) <= len(cadena):
 				camino += (str(nodos[recorrido[j][0]].numero)+"("+(cadena[i])+") -> ")
-				i += 0
+				i += 1
 	camino += str(recorrido[j+1][0])
 	print(camino)
